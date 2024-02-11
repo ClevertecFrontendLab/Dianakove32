@@ -18,7 +18,7 @@ import './index.css'
 
 const { Sider  } = Layout;
 
-const  Sidebar = ({collapsed, setCollapsed}) =>{
+const  Sidebar: React.FC = ({collapsed, setCollapsed}) =>{
     const {width} = useResize()
     return (<>
         <Sider theme="light" trigger={null} collapsible collapsed={collapsed}>
