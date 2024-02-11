@@ -1,0 +1,51 @@
+.site-layout .site-layout-background {
+    background: #fff;
+    height: inherit;
+}
+.site-layout-background .header-content h1{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 130%;
+    margin: 0;
+}
+.ant-layout-header  {
+    padding: 10px 0 5px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.header-page{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.site-layout .site-layout-background{
+    background-color: #f0f5ff;
+}
+
+@media (max-width: 1000px) {
+    .site-layout-background .header-content h1{
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .ant-layout-header{
+        padding: 0 0  0  20px;
+    }
+    .site-layout-background .header-content h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .btn-setting {
+        margin: 0 20px;
+    }
+    .header-page{
+        margin: 10px 0 15px 10px;
+    }
+}

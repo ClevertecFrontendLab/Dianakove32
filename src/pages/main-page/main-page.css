@@ -1,42 +1,174 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+section.ant-layout{
+    min-height: 100vh;
+}
+.main-screen{
+    background-image: url("../../images/Main-page_light.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    padding : 20px;
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+}
+.ant-card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    border-radius: 2px;
+    max-width: 752px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    color: #003a8c;
+}
+div.ant-card.ant-card-bordered.car-description{
+    margin-bottom: 20px;
+}
+.small-card{
+    width: 240px;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    text-align: center;
+    height: 100px;
+
+}
+.small-card div.ant-card-body{
+    color: #003a8c  ;
+
+}
+.ant-card.small-card .ant-card-body{
+    padding: 8px 0;
+}
+.row-container{
+    display: flex;
+}
+ul.card-container{
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+.card-item{
+    list-style-type: '- ';
+    color: #003a8c;
+}
+.card-title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 0;
+    color: #003a8c;
+}
+.card-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #262626;
+}
+.site-card-wrapper{
+    margin-top: 40px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: auto;
+}
+.footer-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1890ff;
+}
+.footer-card{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    width: 240px;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
     text-align: center;
 }
+.footer-card .ant-card-body{
+   padding: 0 20px;
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
 }
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+.footer-card div.ant-card-head-title{
+    font-size: 16px;
+    color: #1890ff;
+    padding-bottom: 0;
 }
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+.footer-note{
+    color:#8c8c8c
+}
+.footer-ios{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
+@media (max-width: 1000px) {
+    .main-screen{
+        padding-top: 10px;
     }
-    to {
-        transform: rotate(360deg);
+    .small-card {
+        width: 100%;
+    }
+    .site-card-wrapper{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    div.ant-row.small-card-container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+    div.ant-row.small-card-container  div.ant-card {
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    div.ant-card-head-title{
+        white-space: pre-wrap;
+        height: inherit;
+    }
+    div.ant-card.ant-card-bordered.car-description{
+        margin-bottom: 10px;
     }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
+@media (max-width: 570px) {
+    .main-screen{
+        height: inherit;
     }
-}
-
-.card {
-    padding: 2em;
-}
-
-.read-the-docs {
-    color: #888;
+    .small-card {
+        width: 100%;
+    }
+    .ant-col{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.ant-card-body{
+        padding: 20px;
+    }
+    div.ant-row.small-card-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: revert;
+    }
+    div.ant-card.footer-card{
+        width: 100%;
+    }
+    .footer-link{
+        margin-top: 20px;
+    }
+    .main-screen{
+        background-position: initial;
+        background-size: 120% 100%;
+        margin-top: 10px;
+    }
 }
