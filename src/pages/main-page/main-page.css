@@ -18,7 +18,7 @@ section.ant-layout{
     border-radius: 2px;
     max-width: 752px;
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
-    color: #003a8c;
+    color: var(--blue-light-9);
 }
 div.ant-card.ant-card-bordered.car-description{
     margin-bottom: 20px;
@@ -32,7 +32,7 @@ div.ant-card.ant-card-bordered.car-description{
 
 }
 .small-card div.ant-card-body{
-    color: #003a8c  ;
+    color: var(--blue-light-9)  ;
 
 }
 .ant-card.small-card .ant-card-body{
@@ -49,20 +49,20 @@ ul.card-container{
 }
 .card-item{
     list-style-type: '- ';
-    color: #003a8c;
+    color: var(--blue-light-9);
 }
 .card-title{
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
     margin-bottom: 0;
-    color: #003a8c;
+    color: var(--blue-light-9);
 }
 .card-text{
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
-    color: #262626;
+    color: var(--neutral-gray-10);
 }
 .site-card-wrapper{
     margin-top: 40px;
@@ -78,7 +78,7 @@ ul.card-container{
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    color: #1890ff;
+    color: var(--character-light-link);
 }
 .footer-card{
     font-weight: 400;
@@ -95,11 +95,11 @@ ul.card-container{
 }
 .footer-card div.ant-card-head-title{
     font-size: 16px;
-    color: #1890ff;
+    color: var(--character-light-link);
     padding-bottom: 0;
 }
 .footer-note{
-    color:#8c8c8c
+    color: var(--neutral-gray-7);
 }
 .footer-ios{
     margin-bottom: 0;

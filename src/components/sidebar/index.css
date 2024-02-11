@@ -9,7 +9,7 @@
     top: -6px;
 }
 .trigger:hover {
-    color: #1890ff;
+    color: var(--character-light-link);
 }
 .side-bar{
     position: relative;
@@ -41,7 +41,7 @@ button.ant-btn.ant-btn-text.button-exit{
     margin-right: 10px;
 }
 .shape {
-    border-left: 20px solid #ffffff;
+    border-left: 20px solid var(--character-light-primary-inverse);
     border-bottom: 6px solid transparent;
     border-top: 6px solid transparent;
     height: 64px;

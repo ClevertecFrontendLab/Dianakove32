@@ -13,7 +13,7 @@ import './index.css'
 const { Header, Content } = Layout;
 
 const LayoutS: React.FC = ({ children })  => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState<boolean>(false);
     const {width, isScreenSm, isScreenXl} = useResize()
 
     return (

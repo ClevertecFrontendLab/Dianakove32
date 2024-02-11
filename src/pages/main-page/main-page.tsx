@@ -11,8 +11,10 @@ import {
 } from "@ant-design/icons";
 
 import './main-page.css';
+import {typeCardLink} from "../../TStypes";
 
-const smallCardLink = [
+
+const smallCardLink: typeCardLink[] = [
     {
         title:'Расписать тренировки',
         icon: <HeartFilled /> ,
@@ -59,7 +61,7 @@ export const MainPage: React.FC = () => {
                <div className="site-card-wrapper ">
                    <Row  gutter={16}   justify={''} className={'small-card-container'}>
                        {
-                           smallCardLink.map((card,i) => {
+                           smallCardLink.map((card:typeCardLink,i:number) => {
                          return <Col key={i}>
                                    <Card className={'small-card'} title={card.title} bordered={false} >
                                        {card.icon} {card.text}

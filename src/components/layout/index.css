@@ -1,5 +1,5 @@
 .site-layout .site-layout-background {
-    background: #fff;
+    background: var(--neutral-gray-1);
     height: inherit;
 }
 .site-layout-background .header-content h1{
@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 .site-layout .site-layout-background{
-    background-color: #f0f5ff;
+    background-color: var(--primary-light-1);
 }
 
 @media (max-width: 1000px) {
