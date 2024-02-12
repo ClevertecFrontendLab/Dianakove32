@@ -6,7 +6,7 @@
     transition: color 0.3s;
     position: absolute;
     right: 6px;
-    top: -6px;
+    top: 0;
 }
 .trigger:hover {
     color: var(--character-light-link);
@@ -41,20 +41,17 @@ button.ant-btn.ant-btn-text.button-exit{
     margin-right: 10px;
 }
 .shape {
-    border-left: 20px solid var(--character-light-primary-inverse);
-    border-bottom: 6px solid transparent;
-    border-top: 6px solid transparent;
-    height: 64px;
     position: absolute;
     top:50%;
     left: 100%;
+    z-index: 10;
 }
 
 @media (max-width: 550px) {
     aside.ant-layout-sider.ant-layout-sider-light{
         min-width: 130px !important;
         width: 130px !important;
-        position: absolute;
+        position: fixed;
         z-index: 10 ;
         height: 100%;
     }
@@ -62,11 +59,14 @@ button.ant-btn.ant-btn-text.button-exit{
         width: 130px;
     }
     aside.ant-layout-sider.ant-layout-sider-light.ant-layout-sider-collapsed{
-        left: -34%;
+        left: -31%;
+    }
+    .trigger {
+        right: 3px;
     }
     .shape {
         display: block;
-        top:2%;
+        top:1%;
     }
     .side-bar li span:first-child,
     .button-exit img{

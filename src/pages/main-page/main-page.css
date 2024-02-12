@@ -170,5 +170,6 @@ ul.card-container{
         background-position: initial;
         background-size: 120% 100%;
         margin-top: 10px;
+        height: 100%;
     }
 }

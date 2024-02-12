@@ -63,7 +63,11 @@ const  Sidebar: React.FC = ({collapsed, setCollapsed}) =>{
                         src={'/src/images/Exit.svg'}
                     /> {collapsed ? '' : 'Выход'}</Button>
             </div>
-            <div className={'shape'} onClick={() => setCollapsed(!collapsed)}><span data-test-id={width < 570  ? 'sider-switch-mobile' : 'sider-switch'} className={'trigger'}>{collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>} </span> </div>
+
+            <div className={'shape'} onClick={() => setCollapsed(!collapsed)}>
+                <img src={'/src/images/Rectangle 376.png'} alt={'img'} />
+                <span data-test-id={width < 570  ? 'sider-switch-mobile' : 'sider-switch'} className={'trigger'}>{collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>} </span>
+            </div>
         </Sider>
         </>
     )
