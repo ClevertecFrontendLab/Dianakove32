@@ -3,3 +3,6 @@ body{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+section.ant-layout.ant-layout-has-sider {
+    max-width: 1440px;
+}
