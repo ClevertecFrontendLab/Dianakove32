@@ -26,7 +26,7 @@ const LayoutS: React.FC = ({ children })  => {
                     <span className={'header-page'}>Главная</span>
                     <div className={'header-content'}>
                         <Title >Приветствуем тебя в CleverFit - приложении,<br/> которое поможет тебе добиться своей мечты!</Title>
-                        {isScreenXl && <Button type="text" icon={<SettingOutlined/>}> Настройки</Button>}
+                        {isScreenXl && <Button type="text" icon={<SettingOutlined />}> Настройки</Button>}
                         {width < 1000 && isScreenSm && <Button type="text" > Настройки</Button>}
                         {width < 570 && <Button className={'btn-setting'} shape="circle" icon={<SettingOutlined />} />}
                     </div>

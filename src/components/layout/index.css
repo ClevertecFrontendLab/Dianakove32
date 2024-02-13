@@ -26,7 +26,9 @@
 .site-layout .site-layout-background{
     background-color: var(--primary-light-1);
 }
-
+#root > section > aside > div > div.shape > span > span > svg > path{
+    fill: var(--character-light-secondary-45);
+}
 @media (max-width: 1000px) {
       h1.ant-typography{
         font-weight: 500!important;
