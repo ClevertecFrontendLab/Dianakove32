@@ -1,17 +1,17 @@
 import React from "react";
 
 import LayoutS from "@components/layout";
-import {Card, Col, Row} from 'antd';
+import {Card, Col, Row, Typography} from 'antd';
 import {
     AndroidFilled,
     AppleFilled,
-    CalendarOutlined,
     HeartFilled,
     ProfileOutlined
 } from "@ant-design/icons";
 
 import './main-page.css';
 import {typeCardLink} from "../../TStypes";
+import {CalendarIcon} from "@components/UI/custom-icon";
 
 
 const smallCardLink: typeCardLink[] = [
@@ -22,7 +22,7 @@ const smallCardLink: typeCardLink[] = [
     },
     {
         title:'Назначить календарь',
-        icon: <CalendarOutlined/>  ,
+        icon: <CalendarIcon style={{color:'#003a8c'}}/>  ,
         text:'Календарь'
     },
     {
@@ -31,7 +31,8 @@ const smallCardLink: typeCardLink[] = [
         text:'Профиль'
     },
 ]
-
+const { Meta } = Card;
+const { Title } = Typography;
 export const MainPage: React.FC = () => {
 
     return <LayoutS className={' '}>
@@ -54,9 +55,8 @@ export const MainPage: React.FC = () => {
                     </ul>
                 </Card>
                 <Card>
-                    <p className={'card-text'}>CleverFit — это не просто приложение, а твой личный
-                        помощник в мире фитнеса. Не откладывай на завтра — начни тренироваться уже
-                        сегодня!</p>
+                    <Title className={'card-text'} level={4}>CleverFit — это не просто приложение, а твой личный помощник в мире фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!</Title>
+
                 </Card>
                <div className="site-card-wrapper ">
                    <Row  gutter={16}   justify={''} className={'small-card-container'}>
@@ -73,9 +73,14 @@ export const MainPage: React.FC = () => {
                </div>
             <div className={'main-footer'}>
                 <p className={'footer-link'}>Смотреть отзывы</p>
-                <Card className={'footer-card'} title="Скачать на телефон" bordered={false}>
-                   <p className={'footer-note'}>Доступно в PRO-тарифе</p>
-                    <p className={'footer-ios'}><p><AndroidFilled />Android OS</p><p><AppleFilled />Apple IOS</p></p>
+                <Card className={'footer-card'}    bordered={false}         actions={[
+                  <p style={{color:'#262626'}} ><AndroidFilled  key="android"  />Android OS </p>  ,
+                    <p style={{color:'#262626'}}> <AppleFilled key="ios" style={{color:'#262626'}}/> Apple IOS</p> ,
+                ]}>
+                    <Meta
+                        title="Скачать на телефон"
+                        description="Доступно в PRO-тарифе"
+                    />
                 </Card>
             </div>
         </div>

@@ -9,7 +9,7 @@
     margin: 0;
 }
 .ant-layout-header  {
-    padding: 10px 0 5px 24px;
+    padding: 16px 0 22px 24px;
     display: flex;
     flex-direction: column;
 }
@@ -28,24 +28,29 @@
 }
 
 @media (max-width: 1000px) {
-    .site-layout-background .header-content h1{
-        font-weight: 500;
-        font-size: 24px;
+      h1.ant-typography{
+        font-weight: 500!important;
+        font-size: 24px!important;
+          line-height: 130%  !important;
+    }
+    .ant-btn.ant-btn-text{
+        padding: 4px 34px;
     }
 }
 
 @media (max-width: 550px) {
     .ant-layout-header{
-        padding: 0 0  0  20px;
+        padding: 0 0  0  24px;
     }
-    .site-layout-background .header-content h1{
-        font-size: 20px;
-        margin-left: 10px;
+    h1.ant-typography{
+        font-size: 20px!important;
+        margin-left: 10px!important;
+        font-weight: 500!important;
     }
     .btn-setting {
         margin: 0 20px;
     }
     .header-page{
-        margin: 10px 0 15px 10px;
+        margin: 16px 0 30px 13px;
     }
 }

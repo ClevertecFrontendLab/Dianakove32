@@ -4,17 +4,18 @@ import {useResize} from "@hooks/useResize";
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
-    CalendarOutlined,
     HeartFilled,
     TrophyFilled,
     ProfileOutlined,
 } from '@ant-design/icons';
 import {Layout, Menu, Image, Button} from 'antd';
 
+
 import fullLogo from '/src/images/Logo.svg'
 import smallLogo from '/src/images/Logo.png'
 
 import './index.css'
+import {CalendarIcon} from "@components/UI/custom-icon";
 
 const { Sider  } = Layout;
 
@@ -36,22 +37,22 @@ const  Sidebar: React.FC = ({collapsed, setCollapsed}) =>{
                 items={[
                     {
                         key: '1',
-                        icon: <CalendarOutlined/>,
+                        icon:  <CalendarIcon style={{color:'#003a8c'}}/>,
                         label: 'Календарь',
                     },
                     {
                         key: '2',
-                        icon: <HeartFilled/>,
+                        icon: <HeartFilled style={{color:'#003a8c'}}/>,
                         label: 'Тренировки',
                     },
                     {
                         key: '3',
-                        icon: <TrophyFilled/>,
+                        icon: <TrophyFilled style={{color:'#003a8c'}}/>,
                         label: 'Достижения',
                     },
                     {
                         key: '4',
-                        icon: <ProfileOutlined/>,
+                        icon: <ProfileOutlined style={{color:'#003a8c'}}/>,
                         label: 'Профиль',
                     },
                 ]}

@@ -6,7 +6,7 @@ section.ant-layout{
     background-repeat: no-repeat;
     background-size:cover;
     height: 100%;
-    padding : 20px;
+    padding : 24px;
     display: flex;
     flex-direction: column;
     background-position: bottom;
@@ -21,7 +21,7 @@ section.ant-layout{
     color: var(--blue-light-9);
 }
 div.ant-card.ant-card-bordered.car-description{
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .small-card{
     width: 240px;
@@ -31,8 +31,8 @@ div.ant-card.ant-card-bordered.car-description{
     height: 100px;
 
 }
-.small-card div.ant-card-body{
-    color: var(--blue-light-9)  ;
+.small-card div.ant-card-body span{
+    margin-right: 8px;
 
 }
 .ant-card.small-card .ant-card-body{
@@ -58,14 +58,19 @@ ul.card-container{
     margin-bottom: 0;
     color: var(--blue-light-9);
 }
-.card-text{
-    font-weight: 500;
-    font-size: 20px;
+.ant-card-meta-title{
+    font-weight: 400;
+    font-size: 16px;
     line-height: 130%;
-    color: var(--neutral-gray-10);
+    margin-bottom: 0;
+    color: var(--blue-light-9);
+}
+h4.ant-typography.card-text{
+    line-height: 130%;
+    margin-bottom: 0;
 }
 .site-card-wrapper{
-    margin-top: 40px;
+    margin-top: 16px;
 }
 
 .main-footer{
@@ -89,17 +94,23 @@ ul.card-container{
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
     text-align: center;
 }
+.ant-card-actions > li:not(:last-child) {
+    border:  none;
+}
 .footer-card .ant-card-body{
-   padding: 0 20px;
+   padding: 20px 20px;
 
 }
-.footer-card div.ant-card-head-title{
+.footer-card div.ant-card-meta-title{
     font-size: 16px;
     color: var(--character-light-link);
-    padding-bottom: 0;
+
 }
 .footer-note{
-    color: var(--neutral-gray-7);
+    /*color: var(--neutral-gray-7);*/
+}
+span.anticon.anticon-android, span.anticon.anticon-apple{
+    margin-right: 8px;
 }
 .footer-ios{
     margin-bottom: 0;
@@ -108,14 +119,12 @@ ul.card-container{
 }
 
 @media (max-width: 1000px) {
-    .main-screen{
-        padding-top: 10px;
-    }
+
     .small-card {
         width: 100%;
     }
     .site-card-wrapper{
-        margin-top: 10px;
+        margin-top: 16px;
         margin-bottom: 10px;
     }
     div.ant-row.small-card-container{
@@ -132,7 +141,15 @@ ul.card-container{
         height: inherit;
     }
     div.ant-card.ant-card-bordered.car-description{
-        margin-bottom: 10px;
+        margin-bottom: 24px;
+    }
+    ul.card-container{
+        margin-bottom: 0;
+    }
+    h4.ant-typography.card-text{
+        font-weight: 500;
+        font-size: 20px;
+
     }
 }
 @media (max-width: 570px) {
@@ -144,10 +161,13 @@ ul.card-container{
     }
     .ant-col{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     div.ant-card-body{
-        padding: 20px;
+        padding: 16px;
+    }
+    div.ant-card-body p{
+        margin-bottom: 0;
     }
     div.ant-row.small-card-container{
         flex-wrap: wrap;
@@ -164,7 +184,7 @@ ul.card-container{
         width: 100%;
     }
     .footer-link{
-        margin-top: 20px;
+        margin-top: 24px;
     }
     .main-screen{
         background-position: initial;
