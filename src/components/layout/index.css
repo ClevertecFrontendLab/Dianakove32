@@ -1,0 +1,58 @@
+.site-layout .site-layout-background {
+    background: var(--neutral-gray-1);
+    height: inherit;
+}
+.site-layout-background .header-content h1{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 130%;
+    margin: 0;
+}
+.ant-layout-header  {
+    padding: 16px 0 22px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.header-page{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.site-layout .site-layout-background{
+    background-color: var(--primary-light-1);
+}
+#root > section > aside > div > div.shape > span > span > svg > path{
+    fill: var(--character-light-secondary-45);
+}
+@media (max-width: 1000px) {
+      h1.ant-typography{
+        font-weight: 500!important;
+        font-size: 24px!important;
+          line-height: 130%  !important;
+    }
+    .ant-btn.ant-btn-text{
+        padding: 4px 34px;
+    }
+}
+
+@media (max-width: 550px) {
+    .ant-layout-header{
+        padding: 0 0  0  24px;
+    }
+    h1.ant-typography{
+        font-size: 20px!important;
+        margin-left: 10px!important;
+        font-weight: 500!important;
+    }
+    .btn-setting {
+        margin: 0 20px;
+    }
+    .header-page{
+        margin: 16px 0 30px 13px;
+    }
+}
