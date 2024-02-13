@@ -73,4 +73,7 @@ button.ant-btn.ant-btn-text.button-exit{
     .button-exit img{
         display: none;
     }
+    .button-exit .ant-image{
+        margin-right: -17px;
+    }
 }
