@@ -157,6 +157,7 @@ span.anticon.anticon-android, span.anticon.anticon-apple{
     div.ant-card-head-title{
         white-space: pre-wrap;
         height: inherit;
+        text-align: left;
     }
     div.ant-card.ant-card-bordered.car-description{
         margin-bottom: 24px;
