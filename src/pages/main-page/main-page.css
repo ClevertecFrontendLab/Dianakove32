@@ -18,25 +18,43 @@ section.ant-layout{
     border-radius: 2px;
     max-width: 752px;
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
-    color: var(--blue-light-9);
+    /*color: var(--blue-light-9);*/
+    color: var(--primary-light-6);
 }
 div.ant-card.ant-card-bordered.car-description{
     margin-bottom: 24px;
+}
+
+ div.ant-card-body  > span > svg > path.calendar{
+    fill: var(--primary-light-6);
 }
 .small-card{
     width: 240px;
     border-radius: 2px;
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
     text-align: center;
-    height: 100px;
+    /*height: 100px;*/
 
 }
+.row-2-card{
+      width: 240px;
+      border-radius: 2px;
+      box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+      text-align: center;
+  }
 .small-card div.ant-card-body span{
     margin-right: 8px;
 
 }
+.row-2-card  div.ant-card-body span{
+    margin-right: 8px;
+
+}
 .ant-card.small-card .ant-card-body{
-    padding: 8px 0;
+    padding: 19px 0;
+}
+.ant-card.row-2-card .ant-card-body{
+    padding: 19px 0;
 }
 .row-container{
     display: flex;
@@ -92,13 +110,13 @@ h4.ant-typography.card-text{
     width: 240px;
     border-radius: 2px;
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
-    text-align: center;
+    /*text-align: center;*/
 }
 .ant-card-actions > li:not(:last-child) {
     border:  none;
 }
 .footer-card .ant-card-body{
-   padding: 20px 20px;
+   padding: 20px 24px;
 
 }
 .footer-card div.ant-card-meta-title{
@@ -134,7 +152,7 @@ span.anticon.anticon-android, span.anticon.anticon-apple{
     }
     div.ant-row.small-card-container  div.ant-card {
         height: fit-content;
-        padding-bottom: 10px;
+        /*padding-bottom: 10px;*/
     }
     div.ant-card-head-title{
         white-space: pre-wrap;

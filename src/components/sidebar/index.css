@@ -35,10 +35,12 @@ button.ant-btn.ant-btn-text.button-exit{
     font-size: 14px;
     line-height: 130%;
     text-align: center;
-    left: 24px
+    left: 4px
+    /*left: 24px*/
 }
 .button-exit .ant-image{
-    margin-right: 10px;
+    margin-right: 25px;
+    /*margin-right: 10px;*/
 }
 .shape {
     position: absolute;
@@ -48,32 +50,51 @@ button.ant-btn.ant-btn-text.button-exit{
     /*clip-path: polygon(20% 0%,80% 0%, 100% 100%, 0% 100%);*/
 }
 
-@media (max-width: 550px) {
-    aside.ant-layout-sider.ant-layout-sider-light{
-        min-width: 130px !important;
-        width: 130px !important;
-        position: fixed;
-        z-index: 10 ;
-        height: 100%;
+@media (max-width: 1000px) {
+
+    button.ant-btn.ant-btn-text.button-exit{
+        padding: 0;
+        left: 16px
     }
-    .ant-layout-sider-children{
-        width: 130px;
-    }
-    aside.ant-layout-sider.ant-layout-sider-light.ant-layout-sider-collapsed{
-        left: -35%;
-    }
-    .trigger {
-        right: 4px;
-    }
-    .shape {
-        display: block;
-        top:2%;
-    }
-    .side-bar li span:first-child,
-    .button-exit img{
-        display: none;
-    }
-    .button-exit .ant-image{
-        margin-right: -17px;
-    }
+
+
 }
+    @media (max-width: 550px) {
+        aside.ant-layout-sider.ant-layout-sider-light{
+            min-width: 130px !important;
+            width: 130px !important;
+            position: fixed;
+            z-index: 10 ;
+            height: 100%;
+        }
+        .ant-layout-sider-children{
+            width: 130px;
+        }
+        aside.ant-layout-sider.ant-layout-sider-light.ant-layout-sider-collapsed{
+            left: -35%;
+        }
+        .trigger {
+            right: 4px;
+        }
+        .shape {
+            display: block;
+            top:2%;
+        }
+        .side-bar li span:first-child,
+        .button-exit img{
+            display: none;
+            margin-left: 10px;
+        }
+
+        #root > section > aside > div > ul > li.ant-menu-item  {
+            padding-left: 0 !important;
+        }
+        .button-exit .ant-image{
+            margin-right: -17px;
+        }
+        button.ant-btn.ant-btn-text.button-exit{
+            margin-left: 31px;
+        }
+
+    }
+

@@ -22,7 +22,7 @@ const smallCardLink: typeCardLink[] = [
     },
     {
         title:'Назначить календарь',
-        icon: <CalendarIcon style={{color:'#003a8c'}}/>  ,
+        icon: <CalendarIcon  />  ,
         text:'Календарь'
     },
     {
@@ -66,6 +66,9 @@ export const MainPage: React.FC = () => {
                                    <Card className={'small-card'} title={card.title} bordered={false} >
                                        {card.icon} {card.text}
                                    </Card>
+                             {/*<Card className={'row-2-card'}   title={card.title} bordered={false} >*/}
+                             {/*          {card.icon} {card.text}*/}
+                             {/*      </Card>*/}
                             </Col>
                            })
                        }
